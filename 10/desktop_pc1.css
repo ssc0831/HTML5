@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.pg {
+    width: 800px;    /* 가로 넓이 800px */
+    margin-right: auto; /* 좌우 여백 같게 해서 가운데 정렬 */
+    margin-left: auto;
+}
+.head{
+    background-image: url(title.png);
+    background-repeat: no-repeat;
+    width: 800px; /* 이미지 크기 설정 */
+    height: 264px;
+}
+.head h1 {
+    display: none; /* 텍스트 제목은 이미지로 대치 화면에서 생략 */    
+}
+.entries {
+    float: left; /* entries를 상자로 간주 왼쪽 float */
+    width: 680px;  /* 넓이 sidebar 고려 680px로 조정 */
+}
+.sidebar {
+    float: left;   /* entries 옆에 나란히 출력하기 위해서 float 시킴 */
+    text-align: right;   /* 텍스트 표시 우측 정렬 */
+    width: 100px; /* 넓이는 entries를 고려 800px 넘지 않도록 100px; 설정 */
+    margin-left: 20px;  /* entries와 간격을 만듬 */
+}
+.sidebar ul {
+    list-style-type: none; /* Bullet 장식 제거 */
+}
+.foot {
+    background-color: #333;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #999;
+    padding: 10px;
+    color: #fff;
+    margin-top: 10px;
+    clear: left;  /* 끌려 올라가지 않도록 clear 시켜서 설정한다. */
+    text-align: center;
+}
